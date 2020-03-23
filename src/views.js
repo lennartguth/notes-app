@@ -10,13 +10,13 @@ const generateNoteDOM = (note) => {
     const statusEl = document.createElement('p')
 
     // Set up the remove note button
-    button.textContent = 'x'
-    noteEl.appendChild(button)
-    button.addEventListener('click', () => {
-        removeNote(note.id)
-        saveNotes(notes)
-        renderNotes(notes, filters)
-    })
+    // button.textContent = 'x'
+    // noteEl.appendChild(button)
+    // button.addEventListener('click', () => {
+    //     removeNote(note.id)
+    //     saveNotes(notes)
+    //     renderNotes(notes, filters)
+    // })
 
     // Set up the note title text
     if (note.title.length > 0) {
