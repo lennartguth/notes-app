@@ -26,7 +26,7 @@ const generateNoteDOM = (note) => {
     }
     textEl.classList.add('list-item__title')
     noteEl.appendChild(textEl)
-    noteEl.setAttribute('href', `/edit.html#${note.id}`)
+    noteEl.setAttribute('href', `./edit.html#${note.id}`)
     noteEl.classList.add('list-item')
     statusEl.textContent = updatedAtMessage(note.updatedAt)
     statusEl.classList.add('list-item__subtitle')
@@ -68,7 +68,7 @@ const initializeEditPage = (id) => {
 
     // redirect user if no note was found
     if (!note) {
-        location.assign('/index.html')
+        location.assign('./index.html')
     }
 
     // Initial page load

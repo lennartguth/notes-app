@@ -25,7 +25,7 @@ bodyElement.addEventListener('input', (e) => {
 
 removeElement.addEventListener('click', () => {
     removeNote(noteId)
-    location.assign('/index.html')
+    location.assign('./index.html')
 })
 
 window.addEventListener('storage', (e) => {
